@@ -12,11 +12,14 @@
       <button class="btn stopBtn" disabled>Stop Recording</button>
       <button class="btn add_chapter">add chapter</button>
       <button class="btn add_note">add note</button>
+      <button class="btn create_podcast">create podcast</button>
     </div>
 
     <script>
-      const startBtn = document.getElementById("startBtn");
-      const stopBtn = document.getElementById("stopBtn");
+      const startBtn = document.getElementsByClassName("startBtn");
+      const stopBtn = document.getElementsByClassName("stopBtn");
+      const add_chapter = document.getElementsByClassName("add_chapter");
+      const add_note = document.getElementsByClassName("add_chapter");
       const audioPlayback = document.getElementById("audioPlayback");
       let mediaRecorder;
       let audioChunks = [];

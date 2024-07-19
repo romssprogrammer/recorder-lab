@@ -1,3 +1,7 @@
+.container_recorder {
+  display: flex;
+  flex-direction: column;
+}
 .startBtn {
   background-color: blue;
 }
