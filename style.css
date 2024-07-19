@@ -1,6 +1,7 @@
 .container_recorder {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
 }
 .startBtn {
   background-color: blue;
