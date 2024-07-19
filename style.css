@@ -1,10 +1,10 @@
-#startBtn {
+.startBtn {
   background-color: blue;
 }
-#stopBtn {
+.stopBtn {
   background-color: blueviolet;
 }
-#btn {
+.btn {
   border-radius: 10px;
   padding: 20px;
 }
