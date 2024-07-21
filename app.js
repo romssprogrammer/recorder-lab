@@ -1,2 +1,5 @@
-const windowTelegram = window.telegram.webapp;
-windowTelegram.ready();
+import webApp from "@twa-dev/sdk";
+
+webApp.ready();
+
+webApp.setChatMenuButton();
