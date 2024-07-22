@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@twa-dev/sdk": "^7.0.0",
-    "axios": "^1.7.2"
+    "axios": "^1.7.2",
+    "wavesurfer.js": "^7.8.2"
   }
 }

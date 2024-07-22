@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container_recorder">
+    <!-- <div class="container_recorder">
       <audio id="audioPlayback" controls></audio>
       <button class="btn startBtn">Start Recording</button>
       <button class="btn stopBtn" disabled>Stop Recording</button>
@@ -17,10 +17,13 @@
         <label> New Note</label>
         <input type="text" placeholder="write your note" />
       </div>
-    </div>
+    </div> -->
 
-    <script></script>
-    <script src="app.js"></script>
+    <div id="waveform">
+      <!-- the waveform will be rendered here -->
+    </div>
+    <script src="app.js" type="module"></script>
+
     <script src="webapp.js"></script>
   </body>
 </html>
