@@ -1,6 +1,7 @@
 {
   "name": "recorder-lab",
   "version": "1.0.0",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@twa-dev/sdk": "^7.0.0"
+    "@twa-dev/sdk": "^7.0.0",
+    "axios": "^1.7.2"
   }
 }
