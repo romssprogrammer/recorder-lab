@@ -9,9 +9,11 @@ let mediaRecorder;
 let audioChunks = [];
 
 function webAppLauch() {
-  window.Telegram.WebApp.ready();
   window.Telegram.WebApp.themeParams.button_color = "#27A7E7";
+  window.Telegram.WebApp.themeParams.headerColor = "#27A7E7";
 }
+
+function initializingMiniApp() {}
 webAppLauch();
 function startRecording() {
   startBtn.addEventListener("click", async () => {
