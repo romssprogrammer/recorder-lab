@@ -8,10 +8,11 @@ const audioPlayback = document.getElementById("audioPlayback");
 let mediaRecorder;
 let audioChunks = [];
 
-// function webAppLauch() {
-//   webApp.ready();
-// }
-// webAppLauch();
+function webAppLauch() {
+  window.Telegram.WebApp.ready();
+  window.Telegram.WebApp.themeParams.button_color = "#27A7E7";
+}
+webAppLauch();
 function startRecording() {
   startBtn.addEventListener("click", async () => {
     const stream = await navigator.mediaDevices.getUserMedia({

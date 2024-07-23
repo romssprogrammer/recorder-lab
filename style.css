@@ -4,10 +4,10 @@
   gap: 16px;
 }
 .startBtn {
-  background-color: blue;
+  background-color: aliceblue;
 }
 .stopBtn {
-  background-color: blueviolet;
+  background-color: red;
 }
 .btn {
   border-radius: 10px;

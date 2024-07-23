@@ -24,6 +24,8 @@ file:""
 9:16
 16:9
 
+## bot API
+
 {
 "menu_button": {
 "type": "web_app",
@@ -32,4 +34,20 @@ file:""
 "url": "https://example.com/micropodcast"
 }
 }
+}
+
+## telegram structure
+
+BASE_URL = `https://api.telegram.org/bot${TOKEN_BOT}/`;
+
+## CREATE LINK OF OUR WEBAPP PODCAST
+
+## editMessageMedia Method
+
+{BASE_URL}editMessageMedia
+
+## InputMedia
+
+InputMedia:{
+InputMediaAudio:{type:audio,media: }
 }
