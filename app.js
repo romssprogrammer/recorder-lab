@@ -9,9 +9,9 @@ let mediaRecorder;
 let audioChunks = [];
 
 function webAppLauch() {
-  window.Telegram.WebApp.themeParams.button_color = "#27a7e7";
+  window.Telegram.WebApp.themeParams.button_color = var(--tg-theme-bg-color);
   window.Telegram.WebApp.themeParams.headerColor = "#27a7e7";
-  window.Telegram.WebApp.themeParams.button_text_color = "#ffff";
+  window.Telegram.WebApp.themeParams.button_text_color = "#FFFFE0";
 }
 
 function initializingMiniApp() {}
@@ -48,7 +48,7 @@ try {
 
 stopBtn.addEventListener("click", () => {
   stopBtn.classList.remove("stoptBtn_Active-Style");
-  // startBtn.classList.remove("startBtn_Active-Style");
+  startBtn.classList.remove("startBtn_Active-Style");
   mediaRecorder.stop();
   startBtn.disabled = false;
   stopBtn.disabled = true;
