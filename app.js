@@ -4,22 +4,23 @@ const startBtn = document.querySelector(".startBtn");
 const stopBtn = document.querySelector(".stopBtn");
 const add_chapter = document.getElementsByClassName("add_chapter");
 const add_note = document.getElementsByClassName("add_chapter");
-const audioPlayback = document.getElementById("audioPlayback");
+const audioPlayback = document.querySelector("#audioPlayback");
 let mediaRecorder;
 let audioChunks = [];
 
 function webAppLauch() {
-  window.Telegram.WebApp.themeParams.button_color = "#27A7E7";
-  window.Telegram.WebApp.themeParams.headerColor = "#27A7E7";
+  window.Telegram.WebApp.themeParams.button_color = "#27a7e7";
+  window.Telegram.WebApp.themeParams.headerColor = "#27a7e7";
   window.Telegram.WebApp.themeParams.button_text_color = "#ffff";
-  console.log("window.Telegram.WebApp lauch:");
 }
 
 function initializingMiniApp() {}
 webAppLauch();
-function startRecording() {
+try {
   startBtn.addEventListener("click", async () => {
     startBtn.classList.add("startBtn_Active-Style");
+    stopBtn.classList.add("stoptBtn_Active-Style");
+
     const stream = await navigator.mediaDevices.getUserMedia({
       audio: true,
     });
@@ -41,15 +42,18 @@ function startRecording() {
     startBtn.disabled = true;
     stopBtn.disabled = false;
   });
+} catch (error) {
+  console.log(error);
 }
 
-function stopRecording() {
-  stopBtn.addEventListener("click", () => {
-    mediaRecorder.stop();
-    startBtn.disabled = false;
-    stopBtn.disabled = true;
-  });
-}
+stopBtn.addEventListener("click", () => {
+  stopBtn.classList.remove("stoptBtn_Active-Style");
+  // startBtn.classList.remove("startBtn_Active-Style");
+  mediaRecorder.stop();
+  startBtn.disabled = false;
+  stopBtn.disabled = true;
+});
+
 // startRecording();
 // stopRecording();
 function WavesurferInstance() {}

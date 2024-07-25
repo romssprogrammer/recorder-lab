@@ -60,3 +60,5 @@ BASE_URL = `https://api.telegram.org/bot${TOKEN_BOT}/`;
 InputMedia:{
 InputMediaAudio:{type:audio,media: }
 }
+
+"#27A7E7"
