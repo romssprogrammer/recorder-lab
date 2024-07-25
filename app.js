@@ -11,6 +11,8 @@ let audioChunks = [];
 function webAppLauch() {
   window.Telegram.WebApp.themeParams.button_color = "#27A7E7";
   window.Telegram.WebApp.themeParams.headerColor = "#27A7E7";
+  window.Telegram.WebApp.themeParams.button_text_color = "#ffff";
+  console.log("window.Telegram.WebApp lauch:");
 }
 
 function initializingMiniApp() {}
