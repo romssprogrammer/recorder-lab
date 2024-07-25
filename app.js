@@ -19,6 +19,7 @@ function initializingMiniApp() {}
 webAppLauch();
 function startRecording() {
   startBtn.addEventListener("click", async () => {
+    startBtn.classList.add("startBtn_Active-Style");
     const stream = await navigator.mediaDevices.getUserMedia({
       audio: true,
     });

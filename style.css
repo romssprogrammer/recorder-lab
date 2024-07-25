@@ -13,8 +13,14 @@ html {
   gap: 16px;
   width: 300px;
 }
+/*PODCAST ACTION*/
+/*BUTTONS*/
 .startBtn {
   /* background-color: aliceblue; */
+}
+
+.startBtn_Active-Style {
+  background-color: "#27A7E7";
 }
 .stopBtn {
   background-color: red;
@@ -24,6 +30,7 @@ html {
   padding: 20px;
   width: 200px;
 }
+
 .create_podcast_link {
 }
 
