@@ -9,7 +9,7 @@ let mediaRecorder;
 let audioChunks = [];
 
 function webAppLauch() {
-  window.Telegram.WebApp.themeParams.button_color = var(--tg-theme-bg-color);
+  window.Telegram.WebApp.themeParams.button_color = "#FFFFE0";
   window.Telegram.WebApp.themeParams.headerColor = "#27a7e7";
   window.Telegram.WebApp.themeParams.button_text_color = "#FFFFE0";
 }
