@@ -9,10 +9,14 @@ let mediaRecorder;
 let audioChunks = [];
 
 function webAppLauch() {
-  window.Telegram.WebApp.themeParams.button_color;
+  window.Telegram.WebApp.ready();
+  window.Telegram.WebApp.themeParams.setHeaderColor("#27A7E7");
+  window.Telegram.WebApp.themeParams.backgroundColor;
+  window.Telegram.WebApp.themeParams.link_color;
+  window.Telegram.WebApp.themeParams.bg_color;
   window.Telegram.WebApp.themeParams.text_color;
-  window.Telegram.WebApp.themeParams.header_bg_color;
-  window.Telegram.WebApp.themeParams.button_text_color;
+  window.Telegram.WebApp.themeParams.button_color;
+  window.Telegram.WebApp.themeParams.accent_text_color;
 }
 
 function initializingMiniApp() {}
@@ -28,7 +32,7 @@ startBtn.addEventListener("click", async () => {
   const stream = await navigator.mediaDevices.getUserMedia({
     audio: true,
   });
-  if (!stream) console.log("please active your Mirophone");
+  if (stream) console.log("please active your Mirophone");
   mediaRecorder = new MediaRecorder(stream);
 
   mediaRecorder.ondataavailable = (event) => {
