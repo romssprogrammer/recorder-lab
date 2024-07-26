@@ -10,8 +10,8 @@ let audioChunks = [];
 
 function webAppLauch() {
   window.Telegram.WebApp.ready();
-  window.Telegram.WebApp.themeParams.setHeaderColor("#27A7E7");
-  window.Telegram.WebApp.themeParams.backgroundColor;
+  window.Telegram.WebApp.setHeaderColor("#27A7E7");
+  window.Telegram.WebApp.backgroundColor;
   window.Telegram.WebApp.themeParams.link_color;
   window.Telegram.WebApp.themeParams.bg_color;
   window.Telegram.WebApp.themeParams.text_color;
