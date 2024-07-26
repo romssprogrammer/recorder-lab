@@ -16,37 +16,37 @@ function webAppLauch() {
 }
 
 function initializingMiniApp() {}
-webAppLauch();
 try {
-  startBtn.addEventListener("click", async () => {
-    startBtn.classList.add("startBtn_Active-Style");
-    stopBtn.classList.add("stoptBtn_Active-Style");
-
-    const stream = await navigator.mediaDevices.getUserMedia({
-      audio: true,
-    });
-    if (!stream) console.log("please active your Mirophone");
-    mediaRecorder = new MediaRecorder(stream);
-
-    mediaRecorder.ondataavailable = (event) => {
-      audioChunks.push(event.data);
-      console.log(audioChunks);
-    };
-
-    mediaRecorder.onstop = () => {
-      const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
-      const audioUrl = URL.createObjectURL(audioBlob);
-      audioPlayback.src = audioUrl;
-      audioChunks = [];
-    };
-
-    mediaRecorder.start();
-    startBtn.disabled = true;
-    stopBtn.disabled = false;
-  });
+  webAppLauch();
 } catch (error) {
   console.log(error);
 }
+startBtn.addEventListener("click", async () => {
+  startBtn.classList.add("startBtn_Active-Style");
+  stopBtn.classList.add("stoptBtn_Active-Style");
+
+  const stream = await navigator.mediaDevices.getUserMedia({
+    audio: true,
+  });
+  if (!stream) console.log("please active your Mirophone");
+  mediaRecorder = new MediaRecorder(stream);
+
+  mediaRecorder.ondataavailable = (event) => {
+    audioChunks.push(event.data);
+    console.log(audioChunks);
+  };
+
+  mediaRecorder.onstop = () => {
+    const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
+    const audioUrl = URL.createObjectURL(audioBlob);
+    audioPlayback.src = audioUrl;
+    audioChunks = [];
+  };
+
+  mediaRecorder.start();
+  startBtn.disabled = true;
+  stopBtn.disabled = false;
+});
 
 stopBtn.addEventListener("click", () => {
   stopBtn.classList.remove("stoptBtn_Active-Style");
