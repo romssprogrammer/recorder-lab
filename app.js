@@ -9,12 +9,10 @@ let mediaRecorder;
 let audioChunks = [];
 
 function webAppLauch() {
-  window.Telegram.WebApp.themeParams = {
-    button_color: "#27a7e7",
-    text_color: "#ffff",
-    header_bg_color: "#27a7e7",
-  };
-  window.Telegram.WebApp.themeParams.button_text_color = "";
+  window.Telegram.WebApp.themeParams.button_color;
+  window.Telegram.WebApp.themeParams.text_color;
+  window.Telegram.WebApp.themeParams.header_bg_color;
+  window.Telegram.WebApp.themeParams.button_text_color;
 }
 
 function initializingMiniApp() {}
