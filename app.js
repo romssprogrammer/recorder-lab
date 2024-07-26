@@ -13,7 +13,7 @@ function webAppLauch() {
     window.Telegram.WebApp.ready();
     window.Telegram.WebApp.setHeaderColor("#27A7E7");
     window.Telegram.WebApp.setBackgroundColor("#ffa500");
-    window.Telegram.WebApp.BackButton.isVisible = true;
+    window.Telegram.WebApp.BackButton.show();
     window.Telegram.WebApp.themeParams;
   } catch (error) {
     console.log(error);
