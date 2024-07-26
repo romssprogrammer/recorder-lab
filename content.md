@@ -7,6 +7,10 @@ cntr + shift + l : use select all matches and then edit or del.
 cntr + D : use for add selection to matches.
 shift + alt + down : use for the duplicates lines and paste it there down.
 
+# DEFINE UX
+
+- Scope
+
 ## twitter link guide
 
 https://core.telegram.org/bots/webapps#designing-mini-apps

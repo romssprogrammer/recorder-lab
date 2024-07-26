@@ -1,4 +1,5 @@
 bot/*
-
+node_modules/
+dist/
 .env
-content
+content.md
