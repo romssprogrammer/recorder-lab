@@ -12,6 +12,7 @@ function webAppLauch() {
   try {
     window.Telegram.WebApp.ready();
     window.Telegram.WebApp.setHeaderColor("#27A7E7");
+    window.Telegram.WebApp.setBackgroundColor("#ffa500");
     window.Telegram.WebApp.backgroundColor;
     window.Telegram.WebApp.themeParams.link_color;
     window.Telegram.WebApp.themeParams.bg_color = "#27A7E7";
